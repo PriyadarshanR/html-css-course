@@ -1,4 +1,32 @@
-h1,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+}
+
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+}
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+/* h1,
 h2,
 h3,
 h4,
@@ -6,7 +34,7 @@ p,
 li {
   font-family: sans-serif;
   color: #444;
-}
+} */
 h1,
 h2,
 h3 {
@@ -35,6 +63,10 @@ p {
 }
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+li:last-child {
+  margin-bottom: 0px;
 }
 /* footer p {
   font-size: 16 px;
@@ -55,14 +87,6 @@ li {
 }
 .related-post-list {
   list-style: none;
-}
-.main-header {
-  background-color: #f7f7f7;
-}
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
 }
 
 /* body {
@@ -85,10 +109,43 @@ li:last-child {
   color: red;
 } */
 
-/*this selector will select and apply the rules only if the first element inside an article is a para  */
+/*this selector will select and apply the rules only if the first element inside an article is a para  
+It wont just select the first para found inside article
+*/
 article p:first-child {
   color: red;
 }
 article p:last-child {
   color: red;
 }
+/* Styling links */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+a:visited {
+  color: #777;
+}
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline dotted orangered;
+}
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* Resolving context */
+/* #copywright {
+  color: red;
+}
+.copywright {
+  color: blue;
+}
+.text {
+  color: yellow;
+}
+footer p {
+  color: green !important;
+} */
