@@ -61,7 +61,7 @@ body {
 
 .details-list {
   list-style: square;
-  padding: 0 0 0 40px;
+  margin-left: 20px;
 }
 
 .details-list li {
@@ -70,12 +70,14 @@ body {
 /* BUTTON */
 .add-cart {
   background-color: #000;
-  border: 3px solid black;
+  border: 4px solid black;
+  border-top: none;
   color: #fff;
   font-size: 20px;
   text-transform: uppercase;
   cursor: pointer;
   width: 100%;
+  height: 50px;
 }
 
 .add-cart:hover {

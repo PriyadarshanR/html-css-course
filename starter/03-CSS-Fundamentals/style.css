@@ -149,3 +149,20 @@ a:active {
 footer p {
   color: green !important;
 } */
+
+nav a:link {
+  display: inline-block;
+  /* background-color: orangered; */
+  margin: 10px 30px;
+}
+nav {
+  text-align: center;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+h3 + p:hover::first-letter {
+  background-color: cyan;
+}
