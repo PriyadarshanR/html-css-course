@@ -9,7 +9,9 @@ body {
 
 .container {
   width: 825px;
-  margin: 0 auto;
+  margin: auto auto;
+  height: max-content;
+  margin-top: 50px;
   /* padding: 8px 40px; */
 }
 
@@ -83,4 +85,58 @@ body {
 .add-cart:hover {
   color: #000;
   background-color: #fff;
+}
+
+.header{
+  position: relative;
+}
+
+.header p{
+  position : absolute;
+  top:-20px;
+  left:-35px;
+  font-weight: bold;
+  color:#f7f7f7;
+  background-color: rgb(220, 57, 57);
+  padding: 8px;
+  letter-spacing: 1px;
+}
+
+.header::after{
+  content: "TOP";
+  position : absolute;
+  top:-20px;
+  right:-35px;
+  font-weight: bold;
+  color:#777;
+  background-color: rgb(247, 247, 61);
+  padding: 8px;
+}
+
+.available-colors div{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin:10px;
+  margin-right: 10px;
+  background-color: black;
+}
+.available-colors div:last-child{
+  margin-right: 0;
+}
+
+.available-colors div:nth-child(1) {
+  background-color: red;
+}
+
+.available-colors div:nth-child(2) {
+  background-color: green;
+}
+
+.available-colors div:nth-child(3) {
+  background-color: blue;
+}
+
+.available-colors div:nth-child(4) {
+  background-color: orange;
 }
