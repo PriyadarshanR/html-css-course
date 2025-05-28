@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -35,6 +36,8 @@ body {
   font-weight: bold;
   color: #777;
   margin-bottom: 20px;
+  margin-top: 8px;
+  float:right;
 }
 
 .sale {
@@ -93,7 +96,7 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 15px;
-  margin-top: 30px;
+  margin-top: 16px;
 }
 
 .details-list {
@@ -121,4 +124,36 @@ body {
 .add-cart:hover {
   color: #000;
   background-color: #fff;
+}
+
+img, .product-details, .product-information{
+  float:left;
+}
+img{
+  margin-right:40px;
+}
+
+.product-information{
+  /* .product width = 825
+  borders on 2 sides = 8
+  we need 40px separation between columns so 80
+  img has already taken up 250
+  So the remaining space is 825-8-80-250 = 487
+  so width of each container should be 243 */
+  width: 243px;
+  margin-right: 40px;
+  margin-top: 12px;
+}
+.product-details{
+  /* .product width = 825
+  borders on 2 sides = 8
+  we need 40px separation between columns so 80
+  img has already taken up 250
+  So the remaining space is 825-8-80-250 = 487
+  so width of each container should be 243 */
+  width: 243px;
+}
+
+.product-description{
+  clear:right;
 }
