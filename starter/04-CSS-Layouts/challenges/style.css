@@ -37,7 +37,6 @@ body {
   color: #777;
   margin-bottom: 20px;
   margin-top: 8px;
-  float:right;
 }
 
 .sale {
@@ -52,18 +51,20 @@ body {
   position: absolute;
   top: -17px;
   left: -38px;
-  
-/*   width: 40px;
+
+  /*   width: 40px;
   text-align: center; */
 }
 
-.more-info:link, .more-info:visited {
+.more-info:link,
+.more-info:visited {
   color: black;
   margin-bottom: 30px;
   display: inline-block;
 }
 
-.more-info:hover, .more-info:active {
+.more-info:hover,
+.more-info:active {
   text-decoration: none;
 }
 
@@ -126,34 +127,57 @@ body {
   background-color: #fff;
 }
 
-img, .product-details, .product-information{
-  float:left;
-}
-img{
-  margin-right:40px;
+img {
+  /* margin-right: 40px; */
+  flex: 0 0 auto;
 }
 
-.product-information{
+.product-information {
   /* .product width = 825
   borders on 2 sides = 8
   we need 40px separation between columns so 80
   img has already taken up 250
   So the remaining space is 825-8-80-250 = 487
   so width of each container should be 243 */
-  width: 243px;
-  margin-right: 40px;
-  margin-top: 12px;
+  /* flex-basis: 243px; */
+  /* width: 243px; */
+  /* margin-right: 40px; */
+  /* margin-top: 12px; */
 }
-.product-details{
+.product-details {
   /* .product width = 825
   borders on 2 sides = 8
   we need 40px separation between columns so 80
   img has already taken up 250
   So the remaining space is 825-8-80-250 = 487
   so width of each container should be 243 */
-  width: 243px;
+  /* flex-basis: 243px; */
 }
 
-.product-description{
-  clear:right;
+.flex-container {
+  display: flex;
+  gap: 40px;
+}
+
+.flex-container > * {
+  flex: 1;
+}
+
+.center-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+}
+
+.product-title {
+  grid-column: 1 /-1;
+}
+
+.add-cart {
+  grid-column: 1 /-1;
 }
